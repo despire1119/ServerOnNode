@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Touch Events</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maxinum-scale=1, minimum-scale=1, user-scalable=no">
+	<style>
+	html,body{
+		overflow: hidden;
+		position: relative;
+	}
+	body{
+		padding: 0;
+		margin: 0;
+	}
+	.box{
+		width: 100%;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		background-color: #f0f0f0;
+		height: 1500px;
+		position: relative;
+	}
+	.block{
+		width: 100px;
+		height: 100px;
+		background-color: #000;
+		position: absolute;
+		left: 0;
+		right: 0;
+	}
+	</style>
+</head>
+<body>
+	<!-- <div id="box" class="box">
+		<div class="block" id="block"></div>
+	</div> -->
+	<audio src="bgmusic2.mp3" autoplay id="audio"></audio>
+	<button id="pause">暂停</button>
+	<button id="play">播放</button>
+
+	<script type="text/javascript">
+		window.onload = function(){
+			// var box = document.getElementById('block');
+			// box.addEventListener('touchstart', function(e){
+			// 	var touchObj = e.changedTouches[0];
+			// 	e.preventDefault();
+			// }, false);
+
+			// box.addEventListener('touchmove', function(e){
+			// 	var touchObj = e.changedTouches[0];
+			// 	var x = touchObj.clientX;
+			// 	var y = touchObj.clientY;
+			// 	box.style.left = x + 'px';
+			// 	box.style.top = y + 'px';
+			// 	e.preventDefault();
+			// }, false);
+			
+			var audio = document.getElementById('audio');
+			var pause = document.getElementById('pause');
+			var play = document.getElementById('play');
+			pause.addEventListener('click', function(){
+				audio.pause();
+			}, false);
+			play.addEventListener('click', function () {
+				audio.play();
+			})
+
+		}
+	</script>
+</body>
+</html>

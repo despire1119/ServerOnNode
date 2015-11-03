@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>您正在参加摇一摇活动</title>
+	<style>
+	.chart{background-color: #f0f0f0;height: 400px;position: relative;}
+	.bar-wrap{width: 40px;position: relative;height: 100%;float: left;margin: 0 10px;}
+	.bar{position: absolute;bottom: 0;left: 0}
+	.bar-text{text-align: center;line-height: 30px;display: block;}
+	.bar-main{width: 40px;background-color: green;}
+	</style>
+</head>
+<body>
+	<div class="users"></div>
+	<div class="status"></div>
+	<div class="chart">
+	</div>
+	<script src="/js/jquery.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/js/race.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+/* line 1, ../../sass/base/common.scss */
+html {
+  font-size: 10px;
+}
+
+/* line 4, ../../sass/base/common.scss */
+body {
+  font-size: 1.4rem;
+  color: #353d44;
+  background-color: #f2f2f2;
+}
+
+/* default style */
+/* line 10, ../../sass/base/common.scss */
+a:link,
+a:visited,
+a:hover {
+  color: #353d44;
+}
+
+/* line 16, ../../sass/base/common.scss */
+input[type='submit'],
+input[type='password'],
+input[type='text'],
+button,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  font-size: inherit;
+}
+
+/* line 30, ../../sass/base/common.scss */
+button {
+  border: none;
+}
+
+/* atom style */
+/* line 34, ../../sass/base/common.scss */
+.red {
+  color: #e21d1d;
+}
+
+/* button */
+/* line 39, ../../sass/base/common.scss */
+.btn {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.6rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 55, ../../sass/base/common.scss */
+.btn-full {
+  width: 100%;
+}
+
+/* line 58, ../../sass/base/common.scss */
+.btn-org {
+  background-color: #eda200;
+  color: #fff;
+}
+
+/* line 62, ../../sass/base/common.scss */
+a.btn-org:link,
+a.btn-org:visited,
+a.btn-org:hover {
+  color: #fff;
+}
+
+/* line 68, ../../sass/base/common.scss */
+.btn-disabled {
+  background-color: #cacaca;
+  color: #909090;
+}
+
+/* line 72, ../../sass/base/common.scss */
+a.btn-disabled:link,
+a.btn-disabled:visited,
+a.btn-disabled:hover {
+  color: #909090;
+}

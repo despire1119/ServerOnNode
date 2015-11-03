@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Device Motion Test</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<style>
+	.count{font-size: 30px;text-align: center;}
+	</style>
+</head>
+<body>
+	<div id="count" class="count">0</div>
+
+	<div id="info"></div>
+	<div id="speed"></div>
+	<button id="trigger">点击</button>
+	
+	<script src="/js/jquery.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script src="/js/shake.js"></script>
+</body>
+</html>

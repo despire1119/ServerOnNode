@@ -1,0 +1,19 @@
+// description: css3 mixins, based on Bourbon
+// version: 1.0.0
+
+// variables
+$prefixWebkit: true !default;
+$prefixMoz: true !default;
+$prefixOpera: true !default;
+$prefixMS: true !default;
+$prefixSpec: true !default;
+
+// helper functions
+// add an underscore to custom functions
+
+// add prefix to property
+@function _prefixer($prop, $value, $prefixs){
+    @each $prefix in $prefixs{
+
+    }
+}

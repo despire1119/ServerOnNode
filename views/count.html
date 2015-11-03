@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>计算</title>
+</head>
+<body>
+	<div id="result"></div>
+	<script>
+		var calcs = [],
+			calc = '',
+			result = 0,
+			operators = ['+', '-', ''],
+			numbers = [1,2,3,4,5,6,7,8,9],
+			target = 100,
+			elem = document.getElementById('result');
+		function compute (calc, numbers, target) {
+			if(numbers.length === 1){
+				calc += numbers[0];
+				result = eval(calc);
+				if(result === target){
+					calcs.push(calc);
+					elem.innerHTML += '<div>' + calc + '='+result+'</div>' ;
+				}
+			}else{
+				var current = numbers.slice(0, 1),
+					tempNumbers = numbers.slice(1);
+				for(var i = 0, len = operators.length;i<len;i++){
+					compute(calc + current + operators[i], tempNumbers, target);
+				}
+			}
+		}
+		compute(calc, numbers, target);
+	</script>
+</body>
+</html>

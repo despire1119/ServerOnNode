@@ -1,0 +1,77 @@
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.4rem;
+    color: #353d44;
+    background-color: #f2f2f2;
+}
+/* default style */
+a:link,
+a:visited,
+a:hover{
+    color: #353d44;
+}
+
+input[type='submit'],
+input[type='password'],
+input[type='text'],
+button,
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    font-size: inherit;
+}
+button{
+    border: none;
+}
+/* atom style */
+.red{
+    color: #e21d1d;
+}
+
+/* button */
+.btn{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.6rem;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.btn-full{
+    width: 100%;
+}
+.btn-org{
+    background-color: #eda200;
+    color: #fff;
+}
+a.btn-org:link,
+a.btn-org:visited,
+a.btn-org:hover{
+    color: #fff;
+}
+
+.btn-disabled{
+    background-color: #cacaca;
+    color: #909090;
+}
+a.btn-disabled:link,
+a.btn-disabled:visited,
+a.btn-disabled:hover{
+    color: #909090;
+}
+
